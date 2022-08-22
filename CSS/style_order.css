@@ -1,0 +1,89 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;600;700&display=swap');
+
+:root{
+    --padding-container: 100px 0;
+    --color-title: rgb(19, 56, 10);
+}
+
+body{
+    background-image: linear-gradient(180deg, #0000008C 0%, #0000008C 100%), url(../img/circuito.jpg);
+    background-size: cover;
+    background-repeat:no-repeat;
+    background-position: center center;
+    /* background-image: linear-gradient(-60deg, #e5f3f7 0%, rgb(19, 56, 10) 120%); */
+    min-height: 100vh;
+    width: 100%;
+    display: flex;
+    font-family: 'Poppins', sans-serif;
+
+}
+
+.form{
+    background-color: white;
+    width: 90%;
+    margin: auto;
+    max-width: 400px;
+    border-radius: 1em;
+    padding: 3.5em 1.5em; 
+}
+
+.form__container{
+    width: 100%;
+    display: grid;
+    gap: 1em;
+    grid-auto-columns: 100%;
+}
+
+.form__title{
+    text-align: center;
+    font-size: 1.9rem;
+    margin-bottom: 0.4em;
+}
+
+.form__input{
+    font-family: 'Poppins', sans-serif;
+    font-size: 1rem;
+    padding: 0.8em 1em; /*1em = 16px*/
+    outline: none;
+    border: none;
+    border: 1px solid #bbb0b0;
+    border-radius: 0.2em;
+
+}
+
+.form__input--message{
+    resize: none;
+    padding: 1.8em 1em;
+    margin-bottom: 1.5em;
+}
+
+.form__input--message::-webkit-scrollbar{
+    width: 7px;
+}
+
+.form__input--message::-webkit-scrollbar-thumb{
+    background-color: rgb(19, 56, 10);
+    border-radius: 5px;
+}
+
+.form__cta{
+    font-family: 'Poppins', sans-serif;
+    font-size: 1rem;
+    background-color: rgb(19, 56, 10);
+    justify-self: center;
+    color: white;
+    border: none;
+    text-decoration: none;
+    font-weight: 300;
+    padding: 13px 30px;
+    border-radius: 32px;
+    cursor: pointer;
+    font-weight: 400;
+}
+
+@media (max-width: 450px){
+    .form{
+        padding: 3.5em 1em;
+    }
+}
+
